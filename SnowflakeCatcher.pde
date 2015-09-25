@@ -53,7 +53,7 @@ class Snowflake
   }
   void lookDown()
   {
-    if(y>0 && y<500 && get(x,y+5)==color(135,206,235))
+    if(y>0 && y<500 && get(x,y+5)!=color(0,0,0))
     {
       isMoving = false;
     }
@@ -77,7 +77,7 @@ class Snowflake
   }
   void wrap()
   {
-    if(y>498)
+    if(y>490)
     {
       y = 0;
       x = (int)(Math.random()*500);
